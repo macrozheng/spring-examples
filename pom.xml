@@ -11,6 +11,7 @@
 
     <modules>
         <module>spring-deepseek</module>
+        <module>spring-meilisearch</module>
     </modules>
 
     <parent>
@@ -23,6 +24,8 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <hutool.version>5.8.16</hutool.version>
+        <springdoc-openapi.version>2.3.0</springdoc-openapi.version>
     </properties>
 
     <!--使用aliyun的Maven镜像源提升下载速度-->
