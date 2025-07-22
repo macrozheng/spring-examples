@@ -19,8 +19,8 @@ public class SpringDocConfig {
     @Bean
     public OpenAPI mallTinyOpenAPI() {
         return new OpenAPI()
-                .info(new Info().title("Meilisearch API")
-                        .description("Meilisearch搜索功能演示")
+                .info(new Info().title("Devtools API")
+                        .description("Devtools热部署功能演示")
                         .version("v1.0.0")
                         .license(new License().name("Apache 2.0").url("https://github.com/macrozheng/mall-learning")))
                 .externalDocs(new ExternalDocumentation()
