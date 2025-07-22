@@ -13,6 +13,7 @@
         <module>spring-deepseek</module>
         <module>spring-meilisearch</module>
         <module>spring-retrofit</module>
+        <module>spring-devtools</module>
     </modules>
 
     <parent>
@@ -28,6 +29,8 @@
         <hutool.version>5.8.16</hutool.version>
         <springdoc-openapi.version>2.3.0</springdoc-openapi.version>
         <retrofit-start.version>3.1.7</retrofit-start.version>
+        <docker.maven.plugin.version>0.40.2</docker.maven.plugin.version>
+        <docker.host>http://192.168.3.101:2375</docker.host>
     </properties>
 
     <!--使用aliyun的Maven镜像源提升下载速度-->
