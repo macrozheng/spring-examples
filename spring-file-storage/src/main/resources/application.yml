@@ -1,0 +1,44 @@
+server:
+  port: 8088
+
+spring:
+  application:
+    name: spring-file-storage
+
+springdoc:
+  swagger-ui:
+    # 修改Swagger UI路径
+    path: /swagger-ui.html
+    # 开启Swagger UI界面
+    enabled: true
+  api-docs:
+    # 修改api-docs路径
+    path: /v3/api-docs
+    # 开启api-docs
+    enabled: true
+  group-configs:
+    - group: 'retrofit'
+      packages-to-scan: com.macro.blog.storage
+  default-flat-param-object: false
+
+dromara:
+  x-file-storage:
+    default-platform: amazon-s3-v2-1
+    amazon-s3-v2: # Amazon S3 V2
+      - platform: amazon-s3-v2-1 # 存储平台标识
+        enable-storage: true  # 启用存储
+        access-key: rustfsadmin
+        secret-key: rustfsadmin
+        region: ap-east-1 # 必填
+        end-point: http://192.168.3.101:9000 # 必填
+        bucket-name: simple #桶名称
+        domain: http://192.168.3.101:9000/ # 访问域名
+    minio:
+      - platform: minio-1 # 存储平台标识
+        enable-storage: true  # 启用存储
+        access-key: minioadmin
+        secret-key: minioadmin
+        end-point: http://192.168.3.101:9090
+        bucket-name: simple
+        domain: http://192.168.3.101:9090/ # 访问域名
+
