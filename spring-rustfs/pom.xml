@@ -42,7 +42,7 @@
             <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
             <version>${springdoc-openapi.version}</version>
         </dependency>
-        <!--AWS 33 Java SDK相关依赖-->
+        <!--AWS S3 Java SDK相关依赖-->
         <dependency>
             <groupId>software.amazon.awssdk</groupId>
             <artifactId>s3</artifactId>
