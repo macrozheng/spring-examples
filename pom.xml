@@ -17,6 +17,7 @@
         <module>spring-rustfs</module>
         <module>spring-file-storage</module>
         <module>spring-mqtt</module>
+        <module>spring-springdoc</module>
     </modules>
 
     <parent>
